@@ -1,0 +1,4 @@
+# This makes it so that apiCall folder is not shown in github
+
+apiCalls
+*.http
