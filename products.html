@@ -6,23 +6,19 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <!-- Bootstrap CSS v5.2.1 -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="/css/styles.css" />
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/styles.css">
 
-    <!-- If user is not logged in, they should not access this page -->
-    <script src="/scripts/auth.js"></script>
-    <!-- <script>
+  <!-- If user is not logged in, they should not access this page -->
+  <script src="/scripts/auth.js"></script>
+  <script>
     if (!isLoggedIn()) {
       window.location.replace("/login.html")
     }
-  </script> -->
-  </head>
+  </script>
+</head>
 
   <body>
     <header>
@@ -38,9 +34,8 @@
             <li class="nav-item"><a href="products.html" class="nav-link text-light px-2">Shop</a></li>
             <li class="nav-item"><a href="cart.html" class="nav-link text-light px-2">Cart</a></li>
           </ul>
-          <ul class="nav">
-            <li class="nav-item"><a href="login.html" class="nav-link text-light px-2">Login</a></li>
-            <li class="nav-item"><a href="registration.html" class="nav-link text-light px-2">Sign up</a></li>
+          <ul class="nav" id="logoutButton">
+            <li class="nav-item nav-link text-light link-body-emphasis px-2" style="cursor: pointer;">Logout</li>
           </ul>
         </div>
       </nav>
@@ -147,7 +142,7 @@
                 data-name="H7 Flow RGB RTX 4070 Ti Gaming KeyBoard"
                 data-price="135"
               >
-                <img src="images/OIP (1).jpg" alt="logo" height="275" />
+                <img src="images/OIP.jpg" alt="logo" height="275" />
                 <div class="card-body">
                   <h5>$135.00</h5>
                   <h5 class="card-text">H7 Flow RGB RTX 4070 Ti Gaming KeyBoard</h5>
