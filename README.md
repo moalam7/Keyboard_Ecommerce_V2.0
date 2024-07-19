@@ -19,10 +19,20 @@ This project is a collaborative effort to create an e-commerce website focused o
 
 ## Before and After
 ### Before
-![Before Image](path/to/before-image.jpg)
+![Home Page](/images/beforeImages/examplePage.png)
+![Register Page](/images/beforeImages/signupPage.png)
+![Login Page](/images/beforeImages/loginPage.png)
+![Products Page](/images/beforeImages/productsPage.png)
+![Checkout Page](/images/beforeImages/checkoutPage.png)
 
 ### After
-![After Image](path/to/after-image.jpg)
+![Home Page](/images/afterImages/home.png)
+![Register Page](/images/afterImages/register.png)
+![Login Page](/images/afterImages/login.png)
+![Products Page](/images/afterImages/products.png)
+![Add To Cart Page](/images/afterImages/addedCart.png)
+![Cart Page](/images/afterImages/cart.png)
+![Checkout Page](/images/afterImages/checkout.png)
 
 ## Home Page
 The home page provides an overview of the website, showcasing featured products and a brief introduction.

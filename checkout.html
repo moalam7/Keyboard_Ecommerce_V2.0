@@ -32,9 +32,8 @@
             <li class="nav-item"><a href="products.html" class="nav-link text-light px-2">Shop</a></li>
             <li class="nav-item"><a href="cart.html" class="nav-link text-light px-2">Cart</a></li>
           </ul>
-          <ul class="nav">
-            <li class="nav-item"><a href="login.html" class="nav-link text-light px-2">Login</a></li>
-            <li class="nav-item"><a href="registration.html" class="nav-link text-light px-2">Sign up</a></li>
+          <ul class="nav" id="logoutButton">
+            <li class="nav-item nav-link text-light link-body-emphasis px-2" style="cursor: pointer;">Logout</li>
           </ul>
         </div>
       </nav>
@@ -260,12 +259,7 @@
     </ul>
   </footer>
 
-  <script>
-    "use strict";
-    const logoutButton = document.querySelector("#logoutButton");
-
-    logoutButton.onclick = logout;
-  </script>
+  <script src="/scripts/products.js"></script>
 
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
