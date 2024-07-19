@@ -17,17 +17,25 @@ function loadCart() {
     const itemDetails = document.createElement("div");
 
     const itemName = document.createElement("h5");
-    itemName.textContent = `${item.name} -$${item.price}`;
+    itemName.textContent = `${item.name} - $${item.price}`;
     itemDetails.appendChild(itemName);
 
     const buttonGroup = document.createElement("div");
     buttonGroup.classList.add("btn-group");
 
-    const minusButton = document.createElement("button");
-    minusButton.classList.add("btn", "btn-sm", "btn-outline-secondary");
-    minusButton.textContent = "-";
-    minusButton.onclick = () => updateQuantity(item.id, -1);
-    buttonGroup.appendChild(minusButton);
+    if (item.quantity === 1) {
+      const deleteButton = document.createElement("button");
+      deleteButton.classList.add("btn", "btn-sm", "btn-outline-danger");
+      deleteButton.textContent = "Delete";
+      deleteButton.onclick = () => deleteItem(item.id);
+      buttonGroup.appendChild(deleteButton);
+    } else {
+      const minusButton = document.createElement("button");
+      minusButton.classList.add("btn", "btn-sm", "btn-outline-secondary");
+      minusButton.textContent = "-";
+      minusButton.onclick = () => updateQuantity(item.id, -1);
+      buttonGroup.appendChild(minusButton);
+    }
 
     const quantitySpan = document.createElement("span");
     quantitySpan.classList.add("mx-2");
@@ -64,6 +72,18 @@ function updateQuantity(id, delta) {
       cart.splice(itemIndex, 1);
     }
 
+    localStorage.setItem("cart", JSON.stringify(cart));
+    loadCart();
+  }
+}
+
+// If one item in cart, the - button turns into a delete button instead
+function deleteItem(id) {
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  const itemIndex = cart.findIndex((item) => item.id === id);
+
+  if (itemIndex !== -1) {
+    cart.splice(itemIndex, 1);
     localStorage.setItem("cart", JSON.stringify(cart));
     loadCart();
   }

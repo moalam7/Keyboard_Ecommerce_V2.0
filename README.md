@@ -15,7 +15,7 @@
 - [License](#license)
 
 ## Introduction
-This project is a collaborative effort to create an e-commerce website focused on selling a variety of keyboards. The website allows users to browse products, add them to a cart, and proceed to checkout. Users must register or log in to access certain features.
+This project is a collaborative effort to create an e-commerce website focused on selling a variety of keyboards. The website allows users to browse products, add them to a cart if they have logged in, and proceed to checkout. Users must register or log in to access certain features through authentication using an API.
 
 ## Before and After
 ### Before
